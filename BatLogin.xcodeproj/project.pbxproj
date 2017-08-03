@@ -12,6 +12,7 @@
 		29AFA1191DD23720000CF314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29AFA1171DD23720000CF314 /* Main.storyboard */; };
 		29AFA11B1DD23720000CF314 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29AFA11A1DD23720000CF314 /* Assets.xcassets */; };
 		29AFA11E1DD23720000CF314 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29AFA11C1DD23720000CF314 /* LaunchScreen.storyboard */; };
+		29B049C31E1D9743001F6237 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B049C21E1D9743001F6237 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		29AFA11A1DD23720000CF314 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29AFA11D1DD23720000CF314 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29AFA11F1DD23720000CF314 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29B049C21E1D9743001F6237 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				29AFA11A1DD23720000CF314 /* Assets.xcassets */,
 				29AFA11C1DD23720000CF314 /* LaunchScreen.storyboard */,
 				29AFA11F1DD23720000CF314 /* Info.plist */,
+				29B049C21E1D9743001F6237 /* LoginViewController.swift */,
 			);
 			path = BatLogin;
 			sourceTree = "<group>";
@@ -91,7 +94,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Rafael Navarro";
 				TargetAttributes = {
 					29AFA10F1DD2371E000CF314 = {
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29B049C31E1D9743001F6237 /* LoginViewController.swift in Sources */,
 				29AFA1161DD23720000CF314 /* ViewController.swift in Sources */,
 				29AFA1141DD23720000CF314 /* AppDelegate.swift in Sources */,
 			);
@@ -182,6 +186,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -231,6 +236,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -300,6 +306,7 @@
 				29AFA1241DD23720000CF314 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

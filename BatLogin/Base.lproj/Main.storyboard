@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BatLogin" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,137 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo_splash" translatesAutoresizingMaskIntoConstraints="NO" id="hz8-ET-qNZ">
+                                <rect key="frame" x="90" y="290.5" width="194" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="N6X-I9-F62"/>
+                                    <constraint firstAttribute="width" constant="194" id="llp-A9-Tod"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Batman es una marca registrada por DC Comic" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrH-4d-YZO">
+                                <rect key="frame" x="62.5" y="623.5" width="250.5" height="13.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94509803921568625" green="0.76862745098039209" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IrH-4d-YZO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Ad-8P-H5g"/>
+                            <constraint firstItem="hz8-ET-qNZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="NbN-Bg-fsm"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="IrH-4d-YZO" secondAttribute="bottom" constant="30" id="ab1-yz-t44"/>
+                            <constraint firstItem="hz8-ET-qNZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="c8O-Yg-SX5"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imgLogoBatman" destination="hz8-ET-qNZ" id="lFl-hH-muX"/>
+                        <outlet property="lblInstruction" destination="IrH-4d-YZO" id="ZWK-sz-XlZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Login View Controller-->
+        <scene sceneID="75F-4P-cpL">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="IG8-4s-Bbc" customClass="LoginViewController" customModule="BatLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IoZ-B9-7eO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Squ-YX-ciR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hmu-qX-GFk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_logo_login" translatesAutoresizingMaskIntoConstraints="NO" id="d6c-Yj-eBF">
+                                <rect key="frame" x="114" y="70" width="146" height="65"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_bat_letras" translatesAutoresizingMaskIntoConstraints="NO" id="t4w-ef-Svh">
+                                <rect key="frame" x="93" y="155" width="188" height="19"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="USUARIO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgY-1b-Kfg">
+                                <rect key="frame" x="43" y="234" width="56" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <color key="textColor" red="0.94509803921568625" green="0.76862745098039209" blue="0.058823529411764705" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TUg-bJ-c5q">
+                                <rect key="frame" x="43" y="254" width="289" height="44"/>
+                                <color key="backgroundColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="19t-6Y-rjG"/>
+                                    <constraint firstAttribute="width" constant="289" id="z91-p5-fhH"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONTRASEÑA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnL-VK-DhX">
+                                <rect key="frame" x="43" y="310" width="85" height="15"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <color key="textColor" red="0.94509803920000002" green="0.76862745099999996" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2hL-kx-WhJ">
+                                <rect key="frame" x="43" y="330" width="289" height="44"/>
+                                <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="O5r-Qc-Qsh"/>
+                                    <constraint firstAttribute="width" constant="289" id="k8L-2r-Xvg"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3n3-sI-xii">
+                                <rect key="frame" x="124" y="394" width="126" height="44"/>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.76862745099999996" blue="0.058823529409999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="BBI-Id-8Uc"/>
+                                    <constraint firstAttribute="width" constant="126" id="Gu7-Lu-IzX"/>
+                                </constraints>
+                                <state key="normal" title="Entrar">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TUg-bJ-c5q" firstAttribute="leading" secondItem="pnL-VK-DhX" secondAttribute="leading" id="3Gr-bK-FXe"/>
+                            <constraint firstItem="d6c-Yj-eBF" firstAttribute="top" secondItem="IoZ-B9-7eO" secondAttribute="bottom" constant="50" id="68B-eo-0cJ"/>
+                            <constraint firstItem="t4w-ef-Svh" firstAttribute="top" secondItem="d6c-Yj-eBF" secondAttribute="bottom" constant="20" id="8cW-gb-9D4"/>
+                            <constraint firstItem="2hL-kx-WhJ" firstAttribute="leading" secondItem="pnL-VK-DhX" secondAttribute="leading" id="AKI-M6-r6H"/>
+                            <constraint firstItem="CgY-1b-Kfg" firstAttribute="leading" secondItem="TUg-bJ-c5q" secondAttribute="leading" id="F0f-eW-FHC"/>
+                            <constraint firstItem="3n3-sI-xii" firstAttribute="centerX" secondItem="hmu-qX-GFk" secondAttribute="centerX" id="Hpn-Oz-jaw"/>
+                            <constraint firstItem="3n3-sI-xii" firstAttribute="top" secondItem="2hL-kx-WhJ" secondAttribute="bottom" constant="20" id="Mqi-je-Agw"/>
+                            <constraint firstItem="2hL-kx-WhJ" firstAttribute="top" secondItem="pnL-VK-DhX" secondAttribute="bottom" constant="5" id="Y4y-Ax-wWF"/>
+                            <constraint firstItem="pnL-VK-DhX" firstAttribute="top" secondItem="TUg-bJ-c5q" secondAttribute="bottom" constant="12" id="Yrp-Pm-s42"/>
+                            <constraint firstItem="t4w-ef-Svh" firstAttribute="centerX" secondItem="hmu-qX-GFk" secondAttribute="centerX" id="ZBI-ni-A6t"/>
+                            <constraint firstItem="d6c-Yj-eBF" firstAttribute="centerX" secondItem="hmu-qX-GFk" secondAttribute="centerX" id="cbF-xf-ZIa"/>
+                            <constraint firstItem="TUg-bJ-c5q" firstAttribute="top" secondItem="CgY-1b-Kfg" secondAttribute="bottom" constant="5" id="dQP-LL-XNj"/>
+                            <constraint firstItem="TUg-bJ-c5q" firstAttribute="centerX" secondItem="hmu-qX-GFk" secondAttribute="centerX" id="dln-CG-s6M"/>
+                            <constraint firstItem="CgY-1b-Kfg" firstAttribute="top" secondItem="t4w-ef-Svh" secondAttribute="bottom" constant="60" id="dpV-Nr-y3l"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnEntrar" destination="3n3-sI-xii" id="w7A-8U-LpK"/>
+                        <outlet property="imgBatLogin" destination="t4w-ef-Svh" id="Mcb-S5-DDp"/>
+                        <outlet property="imgLogoBatman" destination="d6c-Yj-eBF" id="q1q-0V-Ezu"/>
+                        <outlet property="lblPass" destination="pnL-VK-DhX" id="DO7-1Z-Fw8"/>
+                        <outlet property="lblUsuario" destination="CgY-1b-Kfg" id="O5n-5a-fqv"/>
+                        <outlet property="txtPass" destination="2hL-kx-WhJ" id="lH3-le-CtP"/>
+                        <outlet property="txtUsuario" destination="TUg-bJ-c5q" id="ix4-3s-vIY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nHC-Bh-kzT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="812" y="43"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="img_bat_letras" width="188" height="19"/>
+        <image name="img_logo_login" width="146" height="65"/>
+        <image name="img_logo_splash" width="194" height="86"/>
+    </resources>
 </document>
